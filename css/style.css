@@ -1,4 +1,11 @@
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(/font/Montserrat-Regular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -578,10 +585,4 @@ display: inline-block;
 
 
 
-@font-face {
-    font-family: "Montserrat";
-    src: url(/font/Montserrat-Regular.ttf) format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
-}
 
