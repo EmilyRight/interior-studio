@@ -6,7 +6,7 @@
     font-weight: normal;
 }
 
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -48,7 +48,8 @@ input:focus{
     margin: 0 auto;
 }
 
-h1, h3 {
+h1, 
+h3 {
     font-size: 50px;
     font-weight: normal;
     line-height: 62px;
@@ -76,7 +77,6 @@ line-height: 30px;
 }
 
 header {
-    
     min-width: 100%;
     min-height: 100%;
     background-image: url("/img/header.png");
@@ -177,7 +177,7 @@ nav a:focus:after {
 }
 
 .about_block {
-    margin: 40px 183px 12px;
+    margin: 40px 183px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -192,15 +192,23 @@ nav a:focus:after {
     color: #533738;
     text-align: left;
 }
-@media (max-width: 1199px){
+
+@media (max-width: 767px){
+    .about {
+        padding: 75px;
+    }
+    .about .main_container {
+        max-width: none;
+         
+    }
     .about_block {
-        flex-direction: row;
-flex-grow: 0.5;
-
+        flex-direction: column;
+        gap: 10px;
+         
 }
 
 }
-@media (max-width: 991px){
+@media screen and (max-width: 991px){
     .about_block {
         flex-direction: column;
         min-width: 444px;
@@ -211,6 +219,32 @@ flex-grow: 0.5;
     }
 }
 
+@media (max-width: 599px) {
+    .about {
+        padding: 20px;
+    }
+    .about .main_container{
+        padding: 0;
+        margin: 0;
+        transform: scale(0.8);
+    }
+    .about_block {
+        max-width: none;
+    }
+}
+@media (max-width: 479px) {
+    .about {
+        padding: 20px 0px;
+    }
+    .about .main_container{
+        padding: 0;
+        margin: 0;
+        transform: scale(0.7);
+    }
+    .about_block {
+        max-width: none;
+    }
+}
 /*Achievements*/
 
 .achievements {
@@ -561,7 +595,7 @@ display: inline-block;
 
 
 /*адаптив*/
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .main_menu,
     .achievements_container ul,
     .about_block,
@@ -581,7 +615,7 @@ display: inline-block;
         text-align: center;
     }
 
-}   
+}  */ 
 
 
 
