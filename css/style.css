@@ -579,14 +579,16 @@ nav a:focus:after {
 
 @media screen and (max-width:1048px) {
     .work_process {
-        padding: 10px;
+        padding-top: 30px;
     }
     .team_members__block, 
     .work_process__block {
-        padding-top: 3rem;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;   
+    }
+    .work_process__block {
+        margin-top: 0;
     }
     .item_round_number {
         width: 100%;
@@ -608,6 +610,9 @@ nav a:focus:after {
 .reviews_block {
     display: grid;
     grid-template-columns: 0.9fr auto 0.9fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left-arrow flex-content right-arrow";
     column-gap: 29px;
     align-items: center;
     justify-items: center;
@@ -623,15 +628,18 @@ nav a:focus:after {
     font-size: 18px;
     line-height: 30px;
     text-align: left;
+    grid-area: flex-content;
 
 }
 
 .left_arrow {
     margin-left: auto;
+    grid-area: left-arrow;
 }
 
 .right_arrow {
     margin-right: auto;
+    grid-area: right-arrow;
 }
 .review_item {
     max-width: 407px;
@@ -642,8 +650,8 @@ nav a:focus:after {
     flex-direction: column;
     gap: 23px;
 }
-.right_arrow, .left_arrow  {
-  
+.right_arrow, 
+.left_arrow  {
     width: 70px;
     height: 70px;
     background-color: #CC8B86;
@@ -653,6 +661,8 @@ nav a:focus:after {
     
 }
 .review_pictures img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -665,6 +675,44 @@ background-color:  #CC8B86;
 
 .right_arrow button img {
     transform: rotate(180deg)
+}
+
+@media screen and (max-width:1200px){
+    .reviews_block {
+        padding: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-areas: 
+        "flex-content flex-content"
+        "left-arrow right-arrow";
+    }
+    .right_arrow, 
+    .left_arrow  {
+        display: block;
+    }
+}
+@media screen and (max-width:1200px){
+    .reviews_block {
+        padding: 40px 10px 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-areas: 
+        "flex-content flex-content"
+        "left-arrow right-arrow";
+    }
+    .right_arrow, 
+    .left_arrow  {
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px){
+    .review_flex_container {
+        flex-direction: column;
+    }
+    .review_item p{
+        text-align: justify;
+    }
 }
 
 /*Раздел "Оставить заявку" и "Карта"*/
@@ -722,14 +770,12 @@ margin-bottom: 31px;
 #map {
     min-width: 590px; 
     min-height: 600px;
-    border: 1px solid red;
 }
 
 iframe {
     display: block;
     min-width: 100%; 
     height: 624px;
-    border: 1px solid rgb(63, 189, 69);
 }
 @media  (max-width: 1200px) {
     .application_form_container {
