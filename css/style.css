@@ -365,11 +365,12 @@ nav a:focus:after {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    text-align: left;
     background-color:rgba(100, 72, 69, 0.88);
     opacity: 0;
     min-height: 100%;
     cursor: pointer;
+    border: 1px solid red;
+    padding: 86px 35px 122px;
 }
 
 
@@ -378,17 +379,14 @@ nav a:focus:after {
     color: white;  
 }
 
-.pf_title {
-    margin: 86px 109px 0px;
-}
 
 .pf_title+p {
-    margin: 20px auto 122px;
+    margin: 20px 35px 122px;
     color: white;
-    width: 86%;
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
+    border: 1px solid red;
 }
 
 .portfolio_item_description:hover {
@@ -427,6 +425,37 @@ nav a:focus:after {
     vertical-align: top;
 }
 /*Кнопка???*/
+@media screen and (max-width:1263px) {
+    .portfolio_item_description {
+        padding: 30px;
+    }
+    
+    .pf_title+p {
+        margin: 20px auto;
+        color: white;
+        width: 86%;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:951px) {
+    .portfolio_item_description {
+        padding: 20px;
+    }
+    .pf_title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .pf_title+p {
+        margin: 10px auto;
+        color: white;
+        width: 86%;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
 
 @media screen and (max-width:768px){
     .portfolio_block{
@@ -435,13 +464,27 @@ nav a:focus:after {
     .portfolio_block h2{
         text-align: center;
     } 
+    .portfolio_item_description {
+        padding: 15px;
+    }
+    .pf_title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .pf_title+p {
+        margin: 10px auto;
+        color: white;
+        width: 86%;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
 @media screen and (max-width:480px){
     .first_portfolio_row,
     .second_portfolio_row{
         flex-direction: column;
         gap: 10px;
-       
         align-content: center;
     }
     .first_portfolio_row {
@@ -451,6 +494,20 @@ nav a:focus:after {
     .portfolio_item {
         width: 100%;
         align-self: stretch;
+    }
+    .portfolio_item_description {
+        padding: 10px 0px;
+    }
+    .pf_title {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .pf_title+p {
+        margin: 10px auto;
+        color: white;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
     }
 }
 
@@ -467,7 +524,7 @@ nav a:focus:after {
 
 .team_members__block, 
 .work_process__block {
-    padding-top: 3rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -485,14 +542,12 @@ nav a:focus:after {
 }
 
 .team_members_item img {
-    width: 100%;
-    height: auto;
+    max-height: 253px;
     
 }
 
 .work_process {
     padding-top: 2.1rem;
-    padding-left: 3rem;
     
 }
 .work_process__block {
@@ -522,6 +577,22 @@ nav a:focus:after {
     padding-top: 20px;
 }
 
+@media screen and (max-width:1048px) {
+    .work_process {
+        padding: 10px;
+    }
+    .team_members__block, 
+    .work_process__block {
+        padding-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;   
+    }
+    .item_round_number {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 /*Раздел Отзывы"*/
 
