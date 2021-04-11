@@ -184,9 +184,9 @@ nav a:focus:after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 62px;
-    
+    gap: 62px;   
 }
+
 .about_image {
     text-align: center;
     flex-basis: 445px;
@@ -225,7 +225,6 @@ nav a:focus:after {
 }
 
 @media (max-width: 991px){
-    
     .about_image,
     .text {
         transform: scale(0.9);
@@ -386,7 +385,7 @@ nav a:focus:after {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    border: 1px solid red;
+
 }
 
 .portfolio_item_description:hover {
@@ -429,7 +428,6 @@ nav a:focus:after {
     .portfolio_item_description {
         padding: 30px;
     }
-    
     .pf_title+p {
         margin: 20px auto;
         color: white;
@@ -507,7 +505,7 @@ nav a:focus:after {
         color: white;
         font-weight: normal;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 18px;
     }
 }
 
