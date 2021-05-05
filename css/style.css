@@ -795,6 +795,7 @@ iframe {
         min-width: 280px;
     } 
 }
+
 /*Footer*/
 footer {
     background-color: #E5E5E5;
@@ -839,27 +840,3 @@ footer {
         margin: 0;
     }
 }
-
-
-/*адаптив*/
-/*@media (max-width: 1200px) {
-    .main_menu,
-    .achievements_container ul,
-    .about_block,
-    .first_portfolio_row,
-    .second_portfolio_row,
-    .team_members__block,
-    .work_process__block,
-    .application_form_container {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-grow: 0.5;
-        gap: 20px;
-    }
-    *{
-        text-align: center;
-    }
-
-}  */ 
